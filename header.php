@@ -28,6 +28,7 @@
 <body>
 
     <div id="menu" class="global">
+        <?php echo get_custom_logo() ?>
 
         <header class="entete__menu">
 

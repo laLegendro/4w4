@@ -2,32 +2,14 @@
 ?>
 
 <?php get_header(); ?>
-<h2>Front-page.php</h2>
+<h2>category</h2>
 
-<div id="entete" class="global">
-  <section class="entete__header">
-    <h1><?php echo get_bloginfo('name'); ?></h1>
-    <h2><?php echo get_bloginfo('description'); ?></h2>
-    <h3>TIM - Collège de maisonneuve</h3>
-    <a href="#evenement"><button class="entete__button">Événements</button></a>
-  </section>
-  <?php get_template_part("gabarit/vague1"); ?>
-</div>
+
 <div id="accueil" class="global">
   <section class="accueil__section">
     <h2>Accueil</h2>
     <div class="section__cours">
 
-      <!-- /*
-        if (have_posts()) {
-        while (have_posts()) {
-        the_post();
-        the_title('<p>', '</p>');
-        $contenu = get_the_content();
-        $contenu = wp_trim_words($contenu, 10);
-        echo $contenu;
-        };
-        }*/ -->
       <!-- un post c un enregistrement -->
       <?php if (have_posts()) :
         while (have_posts()) : the_post();
