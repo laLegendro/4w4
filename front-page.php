@@ -31,17 +31,12 @@
       <!-- un post c un enregistrement -->
       <?php if (have_posts()) :
         while (have_posts()) : the_post();
-          $titreComplet = get_the_title();
-
-
-
-
 
 
       ?>
           <div class="carte">
 
-            <h5><?php echo $titreComplet; ?></h5>
+            <h5><?php the_title() ?></h5>
             <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
 
           </div>
