@@ -1,26 +1,16 @@
-# Labo 4
+# TP1 - Club de voyage
 
-# PAR ALEJANDRO YANEZ DEL RIO
+### Objectifs:
 
-### Créer une nouvelle branche « labo4 »
+créer un site web pour un club de voyage qui permettra de mettre en valeur les différentes destinations de voyage
 
-### Création du menu principal
+### Auteur: Alejandro Yanez Del rio
 
-- Ajouter un menu permettant d'accéder
-  - à vos quatre cours préférés
-  - à chacune des sections de la page
-- Le menu doit être formatté en utilisant
-  composant/\_menu.scss
-  Le menu doit être adaptatif et être amovible en version mobile.
+### Groupe 2
 
-### Création d'un header.php
+### Description du projet et fonctionnalités:
 
-- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules du thème
+### Liens URL:
 
-### Création d'un « template-part » (gabarit)
-
-- Créer un template-part qui permettra d'afficher les vagues.
-
-### MA GITHUB PAGE:
-
-- https://lalegendro.github.io/coursWeb4/
+- Liens vers web hosting Canada, le serveur distant: whc.ca
+- Lien vers Mon Github page de la page d'accueil
