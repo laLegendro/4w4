@@ -18,27 +18,22 @@
     <h2>Accueil</h2>
     <div class="section__cours">
 
-      <!-- /*
-        if (have_posts()) {
-        while (have_posts()) {
-        the_post();
-        the_title('<p>', '</p>');
-        $contenu = get_the_content();
-        $contenu = wp_trim_words($contenu, 10);
-        echo $contenu;
-        };
-        }*/ -->
-      <!-- un post c un enregistrement -->
+
+      <!-- get_the_title() retourne une chaine qui contient le titre
+                  the_title() echo du tire
+          -->
       <?php if (have_posts()) :
         while (have_posts()) : the_post();
-
 
       ?>
           <div class="carte">
 
+
+
             <h5><?php the_title() ?></h5>
             <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
             <p><a href="<?php echo get_permalink(); ?>">Voir la suite</a></p>
+            <?php the_category(); ?>
 
           </div>
         <?php endwhile; ?>

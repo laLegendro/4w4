@@ -547,6 +547,11 @@ body {
     flex: 0 0 90%;
   }
 }
+.carte .post-categories {
+  list-style-type: none;
+  display: flex;
+}
+
 /*<div id="menu" class="global">
     <div class="entete__menu">
     //generer par wp_nav_menu() de wordpress
