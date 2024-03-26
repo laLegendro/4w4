@@ -14,13 +14,40 @@
   //flex 1 1 calc(1000px/4);
   // et noramalement je peux enlever le media en bas
   padding: 1rem;
+
+  p {
+    display: flex;
+    justify-content: left;
+    transition: color 0.5s ease;
+
+    a {
+      text-decoration: none;
+      color: var(--couleur-accent);
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }
 
 .post-categories {
   // ul de la liste des catégories
   display: flex;
+  justify-content: space-around;
   list-style-type: none;
-  gap: 1rem;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .carte h6 {

@@ -36,11 +36,12 @@
   //le conteneur du nav
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+
   background-color: var(--couleur-secondaire);
   position: relative;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  padding-right: 0.5rem;
   width: 100vw; /*si je ne mets pas de width, ça va seulement prendre la largeur du bouton*/
 }
 
@@ -54,11 +55,11 @@
 
 nav {
   /*lorsque le burger est checked, le nav apparaît de la gauche*/
-
+  margin: 0;
   background-color: var(--couleur-accent);
   box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.2);
   position: absolute; /*par rapport au burger*/
-  top: 55px;
+  top: 90px;
   display: flex; /*centrer étape 1*/
   flex-direction: column; /*centrer étape 2, en colonne*/
   justify-content: center; /*centrer étape 1*/
@@ -117,4 +118,8 @@ nav ul {
 #chk_burger:checked ~ nav {
   translate: 0;
   transition: translate 1s ease;
+}
+
+.menu-principal-container {
+  margin: 0;
 }

@@ -39,6 +39,12 @@ body {
   position: relative;
 }
 
+.entete__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
 #accueil {
   background: var(--couleur-secondaire);
 }

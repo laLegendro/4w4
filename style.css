@@ -61,6 +61,7 @@ h4 {
 h5 {
   font-size: clamp(1.4rem, -1.1563rem + 6.5vw, 2.5rem);
   color: var(--couleur-accent);
+  margin: 1rem;
 }
 
 h6 {
@@ -143,6 +144,12 @@ body {
 #entete {
   background: var(--couleur-principale);
   position: relative;
+}
+
+.entete__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
 }
 
 #accueil {
@@ -536,11 +543,33 @@ body {
   flex: 1 1 29%;
   padding: 1rem;
 }
+.carte p {
+  display: flex;
+  justify-content: left;
+  transition: color 0.5s ease;
+}
+.carte p a {
+  text-decoration: none;
+  color: var(--couleur-accent);
+  transition: color 0.5s ease;
+}
+.carte p a:hover {
+  color: white;
+}
 
 .post-categories {
   display: flex;
+  justify-content: space-around;
   list-style-type: none;
-  gap: 1rem;
+  padding: 0;
+}
+.post-categories a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease;
+}
+.post-categories a:hover {
+  color: white;
 }
 
 .carte h6 {
@@ -589,11 +618,11 @@ body {
 #menu.global {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   background-color: var(--couleur-secondaire);
   position: relative;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  padding-right: 0.5rem;
   width: 100vw; /*si je ne mets pas de width, ça va seulement prendre la largeur du bouton*/
 }
 
@@ -608,10 +637,11 @@ body {
 
 nav {
   /*lorsque le burger est checked, le nav apparaît de la gauche*/
+  margin: 0;
   background-color: var(--couleur-accent);
   box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.2);
   position: absolute; /*par rapport au burger*/
-  top: 55px;
+  top: 90px;
   display: flex; /*centrer étape 1*/
   flex-direction: column; /*centrer étape 2, en colonne*/
   justify-content: center; /*centrer étape 1*/
@@ -667,4 +697,8 @@ nav ul {
 #chk_burger:checked ~ nav {
   translate: 0;
   transition: translate 1s ease;
+}
+
+.menu-principal-container {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
