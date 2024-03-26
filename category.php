@@ -18,7 +18,7 @@
       ?>
           <div class="carte">
 
-            <h5><?php the_title() ?></h5>
+            <h5><?php the_title(); ?></h5>
             <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
             <p><a href="<?php echo get_permalink(); ?>">Voir la suite</a></p>
 

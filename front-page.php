@@ -2,7 +2,7 @@
 ?>
 
 <?php get_header(); ?>
-<h2>Front-page.php</h2>
+
 
 <div id="entete" class="global">
   <section class="entete__header">
@@ -18,16 +18,7 @@
     <h2>Accueil</h2>
     <div class="section__cours">
 
-      <!-- /*
-        if (have_posts()) {
-        while (have_posts()) {
-        the_post();
-        the_title('<p>', '</p>');
-        $contenu = get_the_content();
-        $contenu = wp_trim_words($contenu, 10);
-        echo $contenu;
-        };
-        }*/ -->
+
       <!-- un post c un enregistrement -->
       <?php if (have_posts()) :
         while (have_posts()) : the_post();
@@ -39,7 +30,7 @@
             <h5><?php the_title() ?></h5>
             <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
             <p><a href="<?php echo get_permalink(); ?>">Voir la suite</a></p>
-
+            <?php the_category(); ?>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
