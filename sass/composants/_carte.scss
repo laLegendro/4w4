@@ -16,6 +16,13 @@
   padding: 1rem;
 }
 
+.post-categories {
+  // ul de la liste des catégories
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
 .carte h6 {
   margin: 0;
   padding: 0;
