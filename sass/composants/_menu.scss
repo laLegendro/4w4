@@ -41,12 +41,13 @@
   position: relative;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  padding-right: 0.5rem;
+
   width: 100vw; /*si je ne mets pas de width, ça va seulement prendre la largeur du bouton*/
 }
 
 .entete__menu span {
   display: flex;
+  cursor: pointer;
 
   @media screen and (min-width: 700px) {
     display: none;

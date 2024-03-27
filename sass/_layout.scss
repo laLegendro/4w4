@@ -15,6 +15,7 @@ body {
 .global {
   display: flex;
   justify-content: center;
+
   //min-height: 40vh;
 }
 
@@ -37,6 +38,38 @@ body {
 #entete {
   background: var(--couleur-principale);
   position: relative;
+}
+
+@keyframes animationArrierePlan {
+  0% {
+    background-image: url(./images/voyage1.jpg);
+  }
+
+  20% {
+    background-image: url(./images/voyage2.jpg);
+  }
+  40% {
+    background-image: url(./images/voyage3.jpg);
+  }
+
+  60% {
+    background-image: url(./images/voyage4.jpg);
+  }
+
+  80% {
+    background-image: url(./images/voyage5.jpg);
+  }
+
+  100% {
+    background-image: url(./images/voyage1.jpg);
+  }
+}
+
+#entete.global {
+  animation: animationArrierePlan 10s infinite backwards;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
 }
 
 .entete__menu {

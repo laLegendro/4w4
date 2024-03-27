@@ -28,7 +28,7 @@
 <body>
 
     <div id="menu" class="global">
-        <?php echo get_custom_logo() ?>
+
 
         <header class="entete__menu">
 
@@ -44,5 +44,6 @@
 
 
             <?php wp_nav_menu(array("container" => "nav")) ?>
+            <?php echo get_custom_logo() ?>
         </header>
     </div>

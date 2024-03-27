@@ -146,6 +146,33 @@ body {
   position: relative;
 }
 
+@keyframes animationArrierePlan {
+  0% {
+    background-image: url(./images/voyage1.jpg);
+  }
+  20% {
+    background-image: url(./images/voyage2.jpg);
+  }
+  40% {
+    background-image: url(./images/voyage3.jpg);
+  }
+  60% {
+    background-image: url(./images/voyage4.jpg);
+  }
+  80% {
+    background-image: url(./images/voyage5.jpg);
+  }
+  100% {
+    background-image: url(./images/voyage1.jpg);
+  }
+}
+#entete.global {
+  animation: animationArrierePlan 10s infinite backwards;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+}
+
 .entete__menu {
   display: flex;
   justify-content: space-between;
@@ -542,6 +569,11 @@ body {
   justify-content: space-between;
   flex: 1 1 29%;
   padding: 1rem;
+  transition: all 0.5s ease;
+}
+.carte:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);
 }
 .carte p {
   display: flex;
@@ -552,6 +584,7 @@ body {
   text-decoration: none;
   color: var(--couleur-accent);
   transition: color 0.5s ease;
+  cursor: pointer;
 }
 .carte p a:hover {
   color: white;
@@ -567,6 +600,7 @@ body {
   text-decoration: none;
   color: black;
   transition: color 0.5s ease;
+  cursor: pointer;
 }
 .post-categories a:hover {
   color: white;
@@ -622,12 +656,12 @@ body {
   position: relative;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  padding-right: 0.5rem;
   width: 100vw; /*si je ne mets pas de width, ça va seulement prendre la largeur du bouton*/
 }
 
 .entete__menu span {
   display: flex;
+  cursor: pointer;
 }
 @media screen and (min-width: 700px) {
   .entete__menu span {

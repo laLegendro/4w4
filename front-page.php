@@ -11,7 +11,7 @@
     <h3>TIM - Collège de maisonneuve</h3>
     <a href="#evenement"><button class="entete__button">Événements</button></a>
   </section>
-  <?php get_template_part("gabarit/vague1"); ?>
+  <?php /* get_template_part("gabarit/vague1"); */ ?>
 </div>
 <div id="accueil" class="global">
   <section class="accueil__section">
