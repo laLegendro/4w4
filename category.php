@@ -7,7 +7,11 @@
 
 <div id="accueil" class="global">
   <section class="accueil__section">
-    <h2>Accueil</h2>
+    <?php if (is_category()) : ?>
+      <h2><?php single_cat_title(); ?></h2>
+    <?php else : ?>
+      <h2>Accueil</h2>
+    <?php endif; ?>
     <div class="section__cours">
 
       <!-- un post c un enregistrement -->
@@ -18,9 +22,10 @@
       ?>
           <div class="carte">
 
-            <h5><?php the_title(); ?></h5>
+            <h5><?php the_title() ?></h5>
             <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
             <p><a href="<?php echo get_permalink(); ?>">Voir la suite</a></p>
+            <?php the_category(); ?>
 
           </div>
         <?php endwhile; ?>

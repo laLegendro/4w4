@@ -10,7 +10,26 @@ créer un site web pour un club de voyage qui permettra de mettre en valeur les 
 
 ### Description du projet et fonctionnalités:
 
+### Amélioration de la page d'accueil (front-page.php)
+
+- Changer le titre et la description générale du site - tâche completée
+- Chaque destination contient les catégories associées. - tâche completée
+- On voit uniquement les destinations « populaire » - tâche completée
+- Améliorer l'apparence de la liste des catégories - tâche completée
+- Améliorer l'apparence de chacune des cartes - tâche completée
+- Afficher des cartes de catégories pour l'ensemble des catégories dans la page d'accueil - tâche completée
+
+### Titre de la catégorie
+
+10 premiers mot de la description - tâche completée
+Un lien permet d'accéder à la liste des destinations de cette catégorie - tâche completée
+Le nombre d'article pour cette catégorie- tâche completée
+
+### Créer un readme
+
+- tâche completée
+
 ### Liens URL:
 
-- Liens vers web hosting Canada, le serveur distant: whc.ca
+- Liens vers web hosting Canada, le serveur distant: whc.ca NOUS N'AVONS PAS APPRIS CECI.
 - Lien vers Mon Github page de la page d'accueil

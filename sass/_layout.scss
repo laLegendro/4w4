@@ -26,6 +26,10 @@ body {
   flex: 0 1 1100px;
 }
 
+.global .accueil__section {
+  padding: 1rem 1rem 5rem 1rem;
+}
+
 .global > header,
 .entete__menu,
 .entete__header {
@@ -65,11 +69,42 @@ body {
   }
 }
 
+@keyframes animationArrierePlanGrandEcran {
+  0% {
+    background-image: url(./images/voyage6.jpg);
+  }
+
+  20% {
+    background-image: url(./images/voyage7.jpg);
+  }
+  40% {
+    background-image: url(./images/voyage8.jpg);
+  }
+
+  60% {
+    background-image: url(./images/voyage9.jpg);
+  }
+
+  80% {
+    background-image: url(./images/voyage10.jpg);
+  }
+
+  100% {
+    background-image: url(./images/voyage6.jpg);
+  }
+}
+
 #entete.global {
   animation: animationArrierePlan 10s infinite backwards;
   background-size: cover;
   background-repeat: no-repeat;
   border: none;
+}
+
+@media screen and (min-width: 700px) {
+  #entete.global {
+    animation: animationArrierePlanGrandEcran 10s infinite backwards;
+  }
 }
 
 .entete__menu {

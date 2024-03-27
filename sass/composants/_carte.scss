@@ -21,6 +21,17 @@
     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);
   }
 
+  a {
+    text-decoration: none;
+    color: var(--couleur-accent);
+    transition: color 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
   p {
     display: flex;
     justify-content: left;

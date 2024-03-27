@@ -90,7 +90,7 @@ nav ul {
   justify-content: center;
   align-items: flex-start;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 700px) {
     // desktop
     flex-direction: row;
     justify-content: space-around;

@@ -61,7 +61,7 @@ h4 {
 h5 {
   font-size: clamp(1.4rem, -1.1563rem + 6.5vw, 2.5rem);
   color: var(--couleur-accent);
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 h6 {
@@ -105,6 +105,11 @@ button.entete__button:active {
     margin: 1rem;
   }
 }
+a {
+  font-size: clamp(0.7rem, 0.075rem + 2vw, 1.2rem);
+  padding-bottom: 0.5rem;
+}
+
 /* *******************************************************************/
 /* ******************** les sections des pages  ************************/
 /* *******************************************************************/
@@ -132,6 +137,10 @@ body {
   flex: 0 1 var(--largeur-flex-basis); /* le prmier argument c grow, deuxieme c shrink et le 3eme c */
   padding: 5rem 1rem;
   flex: 0 1 1100px;
+}
+
+.global .accueil__section {
+  padding: 1rem 1rem 5rem 1rem;
 }
 
 .global > header,
@@ -166,6 +175,26 @@ body {
     background-image: url(./images/voyage1.jpg);
   }
 }
+@keyframes animationArrierePlanGrandEcran {
+  0% {
+    background-image: url(./images/voyage6.jpg);
+  }
+  20% {
+    background-image: url(./images/voyage7.jpg);
+  }
+  40% {
+    background-image: url(./images/voyage8.jpg);
+  }
+  60% {
+    background-image: url(./images/voyage9.jpg);
+  }
+  80% {
+    background-image: url(./images/voyage10.jpg);
+  }
+  100% {
+    background-image: url(./images/voyage6.jpg);
+  }
+}
 #entete.global {
   animation: animationArrierePlan 10s infinite backwards;
   background-size: cover;
@@ -173,6 +202,11 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 700px) {
+  #entete.global {
+    animation: animationArrierePlanGrandEcran 10s infinite backwards;
+  }
+}
 .entete__menu {
   display: flex;
   justify-content: space-between;
@@ -575,6 +609,15 @@ body {
   transform: translateY(-10px);
   box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);
 }
+.carte a {
+  text-decoration: none;
+  color: var(--couleur-accent);
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+.carte a:hover {
+  color: white;
+}
 .carte p {
   display: flex;
   justify-content: left;
@@ -705,7 +748,7 @@ nav ul {
   justify-content: center;
   align-items: flex-start;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
   nav ul {
     flex-direction: row;
     justify-content: space-around;

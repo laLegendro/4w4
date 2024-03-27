@@ -15,11 +15,9 @@
 </div>
 <div id="accueil" class="global">
   <section class="accueil__section">
-    <h2>Accueil</h2>
+    <h2>Les plus populaires!!</h2>
     <div class="section__cours">
 
-
-      <!-- un post c un enregistrement -->
       <?php if (have_posts()) :
         while (have_posts()) : the_post();
 
@@ -36,6 +34,30 @@
       <?php endif; ?>
 
     </div>
+
+    <h2>Nos catégories</h2>
+    <div class="section__cours">
+
+      <?php
+      $categories = get_categories();
+      foreach ($categories as $category) {
+        $description = wp_trim_words($category->description, 10, '...');
+        $link = get_category_link($category->term_id);
+        $post_count = $category->count;
+      ?>
+
+        <div class="carte">
+          <h3><?php echo $category->name; ?></h3>
+          <p><?php echo $description; ?></p>
+          <p>Destinations: <?php echo $post_count; ?></p>
+          <a href="<?php echo $link; ?>">Voir toutes ces destinations</a>
+        </div>
+
+      <?php } ?>
+
+
+
+
   </section>
 
 </div>
