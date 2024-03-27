@@ -10,6 +10,10 @@ créer un site web pour un club de voyage qui permettra de mettre en valeur les 
 
 ### Description du projet et fonctionnalités:
 
+### Compléter l'utilisation du mapping de couleurs avec boucle et mixin (1 point)
+
+- tâche non-completée.... j'avais tout fait avant que les changements soient perdus. j'ai de la diffuculté à tout replacer à partir du code du prof. Cependant, l'utilisaition de mixins y se trouvent dans mon sass.
+
 ### Amélioration de la page d'accueil (front-page.php)
 
 - Changer le titre et la description générale du site - tâche completée
@@ -32,4 +36,4 @@ Le nombre d'article pour cette catégorie- tâche completée
 ### Liens URL:
 
 - Liens vers web hosting Canada, le serveur distant: whc.ca NOUS N'AVONS PAS APPRIS CECI.
-- Lien vers Mon Github page de la page d'accueil
+- Lien vers Mon Github page de la page d'accueil: https://lalegendro.github.io/4w4/
